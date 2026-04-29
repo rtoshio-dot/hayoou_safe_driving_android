@@ -1,15 +1,27 @@
-*.iml
-.gradle
-/local.properties
-/.idea
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# SDKs e Bibliotecas Externas
+ncnn-sdk/
+opencv-sdk/
+ncnn_temp/
+cv_temp/
+
+# Android/Gradle
+.gradle/
+build/
+local.properties
+.navigation/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aar
+
+# Modelos e Pesos (Deixe o build.yml gerar o YOLO11)
+*.pt
+*.onnx
+*.engine
+yolo11n_ncnn_model/
+
+# Python e Logs
+__pycache__/
+*.log
+*.zip
